@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculo Dívida</title>
+</head>
+<body>
+   <main>
+    
+   <div class="container">
+    <label for="">Valor Base</label>
+    <input type="number" id="a">
+    <label for="">Meses</label>
+    <input type="number" id="b">
+    <label for="">Juros</label>
+    <input type="number" id="c">
+    <label for="">Multa</label>
+    <input type="number" id="d">
+    <button onClick="calcularValor()">Calcular</button>
+
+    <div>
+        <p>Resultado: </p>
+        <p  id="result"></p>
+    </div>
+   
+   </div>
+    <div>
+    <h3>Primeiro, calculamos a multa: <span id="multa">0%</span>, depois calculamos os juros: <span id="juros">0%</span> <br/>ao mês de forma única (juros simples).</h3>
+    </div>
+   </main>
+   <script src="main.js"></script>
+
+</body>
+</html>
