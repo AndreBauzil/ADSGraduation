@@ -9,10 +9,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:  auto;
     height: 80vh;
     width: 95%;
-    
+    flex-direction: row;
 }
 .container{
     background-color: #94e6c4;
@@ -23,6 +22,15 @@ main{
     margin:  auto;
     padding: 3rem;
     border-radius: 10px;
+}
+.passoAPasso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 10px;
+    background-color: darkorchid;
     
 }
 label{
