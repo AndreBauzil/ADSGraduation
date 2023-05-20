@@ -9,6 +9,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
     height: 80vh;
     width: 95%;
     flex-direction: row;
@@ -28,6 +29,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
     padding: 3rem;
     border-radius: 10px;
     background-color: darkorchid;
