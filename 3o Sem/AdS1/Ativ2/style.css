@@ -9,13 +9,30 @@ header{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 
+    border-top: none;
     border: 3px solid black;
 }
+/* Nomes */
 h2 {
     margin: -17px -20px 10px -20px;
-    z-index: 1;
+    background-color: white;
+}
+/* Linha */
+h2:after {
+    left:0px;
+    display:block;
+    width:100%;
+    margin: -15px 0 0 0;
+    content: " ";
+    background:#000;
+}
+/* Cortar linha */
+h2 span {
+    background-color: white;
+    display: inline-block;
+    width: 475px;
 }
 /* outro header q tava quase dando certo mas desisti */
 /*header h2:before, header h2:after {
