@@ -31,3 +31,7 @@ function calcularValor() {
     // Mostra o valor final no html
     document.getElementById('result').innerHTML =  "R$: "+equacao.toFixed(2); 
 }
+
+// Data do trab
+const dt = new Date();
+document.getElementById('data').innerHTML = dt.getDate()+"/0"+(dt.getMonth()+1);
