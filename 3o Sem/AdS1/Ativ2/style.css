@@ -3,6 +3,44 @@
 :root{
     font-family: 'Roboto', sans-serif;
 }
+/* Header personaliado com a borda de cima faltando (ainda n implementado)*/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+
+    border: 3px solid black;
+}
+h2 {
+    margin: -17px -20px 10px -20px;
+    z-index: 1;
+}
+/* outro header q tava quase dando certo mas desisti */
+/*header h2:before, header h2:after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    border-top: 3px solid black;
+
+    text-align: center;
+    margin-top: -10px;
+    justify-content: center;
+}
+header h2:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 3px solid black;
+
+    transform: translate(-100%, 0);
+    margin-left: -30px;
+  }
+header h2:after {
+    margin-left: 30px;
+}*/
+
 /* Div principal, todo conteúdo */
 main{
     display: flex;
