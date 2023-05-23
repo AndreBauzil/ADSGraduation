@@ -3,20 +3,19 @@
 :root{
     font-family: 'Roboto', sans-serif;
 }
-/* Header personaliado com a borda de cima faltando (ainda n implementado)*/
+
 header{
     display: flex;
-    flex-direction: column; /* é o que ta causando o scroll aparecer */
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     margin-top: 40px;
-
-    border-top: none;
-    border: 3px solid black;
+    border: none;
+    border-top: 3px solid black;
 }
 /* Nomes */
 h2 {
-    margin: -17px -20px 10px -20px;
+    margin: -17px -10px 10px -20px;
     background-color: white;
 }
 /* Linha */
@@ -40,35 +39,35 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 100vh;*/
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 90px;
+    gap: 1rem;
 }
 
 /* Inserção de valores */
 .container{ 
-    background-color: white;
+    background-color: salmon;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3rem;
     border-radius: 10px;
-    border-style: solid;
-    padding-bottom: unset;
+    padding-bottom: 2rem;
+}
+/* Resultado */
+.resultado {
+    display: none;
 }
 
 /* Passo a passo da equação */
 .passoAPasso {
-    background-color: transparent;
-    margin-left: 5%;
+    background-color: salmon;
     display: none;
-    padding-bottom: 3rem;
-}
-
-/* Resultado */
-p {
-    margin: 10px 0 8px;
+    text-align: center;
+    padding: 1.50rem;
+    border: none;
+    border-radius: 10px;
 }
 
 /* Etiquetas, inputs e botão */
@@ -80,16 +79,14 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 button{
-    background-color: #da3737;
+    background-color: #d61d1d;
     transition: background 0.2s;
     padding: 0.5rem;
     border-radius: 5px;
     color: white;
     margin-top: 1rem;
     cursor: p;
-    border: solid;
-    border-color: black;
-    border-width: 2px;
+    border: none;
 }
 button:hover{
     background-color: #811e1e;
