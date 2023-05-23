@@ -4,6 +4,7 @@ const b  = document.getElementById('b');
 const c  = document.getElementById('c');
 const d  = document.getElementById('d');
 const passoAPasso = document.querySelector('.passoAPasso');
+const resultado = document.querySelector('.resultado');
 
 function calcularValor() {
     // Declaração das var
@@ -31,10 +32,13 @@ function calcularValor() {
     console.log(equacao);
 
     // Mostra o valor final no html
-    document.getElementById('result').innerHTML =  "R$: "+equacao.toFixed(2); 
+    document.getElementById('valor').innerHTML =  "R$"+equacao.toFixed(2); 
 
     // Mostra o passoAPasso
     passoAPasso.style.display = 'flex';  
+    
+    // Mostra o resultado
+    resultado.style.display = 'flex';  
 }
 
 // Data do trab
