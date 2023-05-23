@@ -3,6 +3,7 @@ const a  = document.getElementById('a');
 const b  = document.getElementById('b');
 const d  = document.getElementById('d');
 const c  = document.getElementById('c');
+const passoAPasso = document.querySelector('.passoAPasso');
 
 function calcularValor() {
     // Declaração das var
@@ -30,6 +31,9 @@ function calcularValor() {
 
     // Mostra o valor final no html
     document.getElementById('result').innerHTML =  "R$: "+equacao.toFixed(2); 
+
+    // Mostra o passoAPasso
+    passoAPasso.style.display = 'flex';  
 }
 
 // Data do trab
