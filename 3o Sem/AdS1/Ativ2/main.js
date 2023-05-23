@@ -1,8 +1,8 @@
 // Puxa as var do html
 const a  = document.getElementById('a');
 const b  = document.getElementById('b');
-const d  = document.getElementById('d');
 const c  = document.getElementById('c');
+const d  = document.getElementById('d');
 const passoAPasso = document.querySelector('.passoAPasso');
 
 function calcularValor() {
@@ -15,6 +15,7 @@ function calcularValor() {
     // Substituição no passoAPasso
     document.getElementById('juros').innerHTML = c.value+"%";
     document.getElementById('multa').innerHTML = d.value+"%";
+    document.getElementById('valor').innerHTML = a.value;
 
     // Consulta console
     console.log(valor);
