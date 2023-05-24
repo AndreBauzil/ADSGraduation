@@ -27,12 +27,11 @@ function calcularValor() {
     // Equações
     let somaMulta = valor + (valor*multa);
     console.log(somaMulta);
-
     let equacao = somaMulta + ((somaMulta*juros)*meses);
     console.log(equacao);
 
     // Mostra o valor final no html
-    document.getElementById('valor').innerHTML =  "R$"+equacao.toFixed(2); 
+    document.getElementById('valorTot').innerHTML =  "R$"+equacao.toFixed(2); 
 
     // Mostra o passoAPasso
     passoAPasso.style.display = 'flex';  
