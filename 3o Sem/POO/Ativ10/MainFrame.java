@@ -6,15 +6,15 @@ import javax.swing.*;
 
 public class MainFrame extends JFrame{
     // ----------- Global Vars ------------
-    final private Font mainFont = new Font("Segoe print", Font.BOLD, 18); // Fonte principa
+    final private Font mainFont = new Font("Concert One", Font.BOLD, 18); // Fonte principal
     JTextField tfFirstName, tfLastName;         // Inputs de texto
     JLabel lbWelcome;
 
     public void initialize() {
         // ------------- Form Panel (north) ---------------
             // Componentes
-        JLabel lbFirstName = new JLabel("First Name");
-        lbFirstName.setFont(mainFont);
+        JLabel lbUsuario = new JLabel("Usuario");
+        lbUsuario.setFont(mainFont);
         
         tfFirstName = new JTextField();
         tfFirstName.setFont(mainFont);
@@ -35,8 +35,8 @@ public class MainFrame extends JFrame{
         ));
         formPanel.setBorder(BorderFactory.createEmptyBorder(30, 50, 30, 50));
         
-            // Adicionando os components no form
-        formPanel.add(lbFirstName);  
+            // Adicionando os components no form 
+        formPanel.add(lbUsuario);  
         formPanel.add(tfFirstName);
         formPanel.add(lbLastName);
         formPanel.add(tfLastName);
