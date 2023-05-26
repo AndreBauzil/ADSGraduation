@@ -1,3 +1,4 @@
+package Classes;
 public class Juridica extends Pessoa {
     // Atributos
     public long CNPJ;

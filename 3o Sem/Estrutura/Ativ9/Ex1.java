@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+import Classes.*;
+
 public abstract class Ex1 {
     public static void main(String[] args) {
         // Criação da fila e adição das pessoas hardcode

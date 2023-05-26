@@ -3,6 +3,8 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 
+import Classes.*;
+
 public class Ex2 extends JFrame {
     // Declaração de vars globais e criação da fila
     private JTextArea tfFila;

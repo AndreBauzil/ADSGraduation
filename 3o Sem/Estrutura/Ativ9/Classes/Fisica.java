@@ -1,3 +1,4 @@
+package Classes;
 public class Fisica extends Pessoa {
     // Atributos
     private long CPF;
