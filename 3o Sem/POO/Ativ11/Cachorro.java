@@ -3,6 +3,7 @@ public class Cachorro {
     private String nome;
     private int idade;
     private String corPelo;
+    private int ID;
 
     // Construtor
     public Cachorro(String nome, int idade, String corPelo) {
@@ -31,5 +32,12 @@ public class Cachorro {
     }
     public String getCorPelo() {
         return corPelo;
+    }
+
+    public void setId(int ID) {
+        this.ID = ID;
+    }
+    public int getId() {
+        return ID;
     }
 }
