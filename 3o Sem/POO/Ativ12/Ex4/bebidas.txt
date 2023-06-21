@@ -1,0 +1,4 @@
+Água;2.0;boa;100
+Coca;6.0;na verdade é fanta;150
+Fanta;4.5;uva;200
+Sprite;3.75;limãozin;145
