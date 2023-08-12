@@ -13,10 +13,10 @@ public class Cadastro extends JFrame {
     // Frame principal 
     public Cadastro() {
         setTitle("Cadastro de Cachorros");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         setSize(400, 400);
         setLayout(new BorderLayout());
-        setLocationRelativeTo(null);
+        setLocationRelativeTo(null);    // Abrir no centro
 
         // Painel principal
         JPanel panel = new JPanel(new BorderLayout());
