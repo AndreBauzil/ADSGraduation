@@ -6,69 +6,74 @@
     <title>Atividade 1 - Web 1</title>
 </head>
 <body>
-    <table>
-        <thead>
-            
-        </thead>
     <h1>Tabela de tags</h1>
-
-    <table border>
+    <table border style="max-width: 50rem;">
         <thead>
-            <th>Tag</th>
-            <th>Demo</th>
-            <th>Descrição</th>
+            <tr>
+                <th>Tag</th>
+                <th>Demo</th>
+                <th>Descrição</th>
+            </tr>
         </thead>
-        <tr>
-            <td>
-                <p>< h1></p>
-            </td>
-            <td>
-                <h1>Title 1</h1>
-            </td>
-            <td>
-                Título (ou Heading) que possui tamanhos entre 1 a 6, e o tamanho é de forma descrecente.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>< p></p>
-            </td>
-            <td>
-                <p>Paragraph</p>
-            </td>
-            <td>
-                É o elemento de texto mais básico, com formatação simples de parágrafo, bastante utilizado.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>< img></p>
-            </td>
-            <td>
-                <img src="img/tabela.jpg" alt="Exemplo de imagem da tabela de tags">
-            </td>
-            <td>
-                É utilizado para incorporar imagens diretamente na página web
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <table border>
-                    <thead>
-                        <th>Exemplo</th>
-                        <th>de</th>
-                        <th>Tabela</th>
-                    </thead>
-                    <tr>
-                        <td>Exemplo</td>
-                        <td>de</td>
-                        <td>Linha</td>
-                    </tr>
-                </table>
-            </td>
-            <td></td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>&lt;hNº&gt;</td>
+                <td>
+                    <h1>Title 1</h1>
+                    <h2>Title 2</h2>
+                    <h3>Title 3</h3>
+                </td>
+                <td>Título (ou Heading) que possui tamanhos entre 1 a 6.</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td><p>Paragraph</p></td>
+                <td>É o elemento de texto mais básico, com formatação simples de parágrafo, bastante utilizado.</td>
+            </tr>
+            <tr>
+                <td>&lt;img&gt;</td>
+                <td><img style="max-width: 20rem;" src="tabela.jpg" alt="Exemplo de imagem da tabela de tags"></td>
+                <td>É utilizado para incorporar imagens diretamente na página web.</td>
+            </tr>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>
+                    <table border style="max-width: 50rem;">
+                        <thead>
+                            <tr>
+                                <th>Exemplo</th>
+                                <th>de</th>
+                                <th>Tabela</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Exemplo</td>
+                            <td>de</td>
+                            <td>Linha</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Utilizado para criar uma tabela para organizar dados em filas e colunas. As tabelas consistem em linhas (definidas por elementos &lt;tr&gt;) e células (definidas por elementos &lt;td&gt; ou &lt;th&gt; para cabeçalhos). A tag &lt;thead&gt; é usada para definir o cabeçalho da tabela, &lt;tbody&gt; para o corpo e &lt;tfoot&gt; para o rodapé.</td>
+            </tr>
+            <tr>
+                <td>&lt;nav&gt;</td>
+                <td>
+                    <nav>
+                        <a href="#">Link</a>
+                        <a href="#">Link2</a>
+                        <a href="#">Link3</a>
+                    </nav>
+                </td>
+                <td>É uma seção da página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação.</td>
+            </tr>
+            <tr>
+                <td>&lt;div&gt;</td>
+                <td>
+                    <div style="border: 1px solid #000;">Isto é uma div</div>
+                </td>
+                <td>É um container genérico para fluxo de conteúdo, que não representa nada. Pode ser utilizado para agrupar elementos para estilizar, ou porque eles compartilham valores de atributos.</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
