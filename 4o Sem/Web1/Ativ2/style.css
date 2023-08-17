@@ -1,0 +1,44 @@
+
+/* Estilização geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    color: #ccc;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 10rem;
+}
+
+/* Estilos para a tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    max-width: 50rem;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+thead {
+    text-align: center;
+    background-color: #141414;
+}
+
+/* Estilos para as células da demo */
+td.demo {
+    text-align: center;
+}
+
+/* Estilos para a descrição */
+td.description {
+    max-width: 400px;
+}
