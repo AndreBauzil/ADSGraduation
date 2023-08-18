@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 0 1rem;
+    background-image: url(./01-css-images/background.png);
+    background-position: inherit;
+    height: 5000px;
+    background-repeat: no-repeat;
+}
+
+
+
+.hero-section {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(127, 255, 212, 0.197);
+}
+
+:root {
+    --color-primary: ;
+    --color-secondary: ;
+    --color-black: #000;
+    --color-white: #fff;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.text-center {
+    text-align: center;
+}
+
+
+/* http://www.hoole.onl/04-02-starting.html 
+    https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files
+    https://www.youtube.com/watch?v=ouviTuZUB4E
+    https://www.youtube.com/watch?v=SXR8PL3VvqY
+    */
