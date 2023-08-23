@@ -39,14 +39,14 @@ html {
 
 body {
     padding: 0 1rem;
-    background-image: url(./01-css-images/background.png);
+    background-image: url(./01-css-images/background\ -\ Copia.png);
     background-position: inherit;
     height: 5000px;
     background-repeat: no-repeat;
     background-size: 100%;
 
 }
-
+ 
 
 aside {
     position: fixed;
@@ -67,35 +67,31 @@ aside ul li .indicador {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: rgba(25, 255, 79, 0.648);
 }
 aside ul li .ativo {
     transform: scale(1.7);
     transition: transform 200ms ease-in-out;
 } 
 
-section {
-    min-height: 80vh;
+
+.section {
+    min-height: 90vh;
+    min-width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-section:nth-child(2n) {
-    /* https://alvarotrigo.com/blog/create-a-slidebar-bullet-navigation-to-smoothly-snap-to-sections/ */
-    /* https://color.adobe.com/pt/create/color-wheel */
 
-
-    
-    
-}
-
-
+/* MENU */
 .hero-section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
+    height: 23rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,6 +105,10 @@ section:nth-child(2n) {
     padding: 1rem;
     
     justify-content: space-between;
+
+    color: #C40B1A;
+
+    text-shadow:0px 1px 5px #33FF63;
 }
 
 h1 {
@@ -142,12 +142,39 @@ nav img {
 .button {
     display: flex;
     flex-direction: row;
-    width: inherit;
-    height: 1.5rem;
     justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button {
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:20px;
+	border:1px solid #268a16;
+	display:flex;
+	cursor:pointer;
+	color:#306108;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+}
+button:hover {
+	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color:#5cb811;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+button img {
+    max-height: 1rem;
 }
 
 
+/* Tabelas */
 
 
 
@@ -164,4 +191,6 @@ nav img {
     https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files
     https://www.youtube.com/watch?v=ouviTuZUB4E
     https://www.youtube.com/watch?v=SXR8PL3VvqY
+    https://alvarotrigo.com/blog/create-a-slidebar-bullet-navigation-to-smoothly-snap-to-sections/
+    https://color.adobe.com/pt/create/color-wheel
     */
