@@ -91,11 +91,8 @@ aside ul li .ativo {
 }
 
 
-.section {
+.display {
     position: absolute;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     
     height: 23rem;
     
@@ -185,7 +182,11 @@ button img {
 
 /* Tabelas */
 #Tabelas{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.tabelas{
+    display: flex;
 }
 
 
