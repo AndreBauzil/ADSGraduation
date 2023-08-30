@@ -94,7 +94,8 @@ aside ul li .ativo {
 .display {
     position: absolute;
     
-    height: 23rem;
+    height: 35rem;
+    width: 80rem;
     
     background-color: rgba(25, 255, 77, 0.393);
     
