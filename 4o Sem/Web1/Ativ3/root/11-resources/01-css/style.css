@@ -36,7 +36,7 @@
 html {
     scroll-behavior: smooth;
 
-    background-image: url(./01-css-images/background\ -\ Copia.png);
+    background-image: url(./01-css-images/background.png);
     background-position: inherit;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -46,17 +46,58 @@ html {
 
 
 body {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
 
     display: flex;
     flex-direction: column;
 }
  
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    
+    
+    background-color: rgba(25, 255, 77, 0.393);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+    padding-bottom: 1rem;
+}
+/* header{
+    padding-left: -1;
+    padding-right: -1;
+} */
+/* header img {
+    display: block;
+    margin: 1rem auto;
+} */
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem auto 0;
+    
+    justify-items: center;
+}
+nav a {
+    text-shadow:0px 1px 5px #33FF63;
+    color: #85030A;
+    
+    font-size: 1.25rem;
+    padding: .5rem;
+    text-decoration: none;
+}
 
 aside {
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    padding-left: 2.5rem;
 }
 aside ul{
     display: flex;
@@ -94,8 +135,8 @@ aside ul li .ativo {
 .display {
     position: absolute;
     
-    height: 35  rem;
-    width: 80rem;
+    height: 30rem;
+    width: 50rem;
     
     background-color: rgba(25, 255, 77, 0.393);
     
@@ -152,6 +193,12 @@ nav img {
     justify-items: center;
     justify-content: space-evenly;
     align-items: center;
+    
+    color:#306108;
+    font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #aade7c;
 }
 button {
 	box-shadow:inset 0px 1px 0px 0px #caefab;
@@ -161,12 +208,8 @@ button {
 	border:1px solid #268a16;
 	display:flex;
 	cursor:pointer;
-	color:#306108;
-	font-size:15px;
-	font-weight:bold;
+
 	padding:6px 10px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #aade7c;
 }
 button:hover {
 	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
