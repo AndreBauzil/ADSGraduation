@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="pagForm" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./img/ifsul-logo.png" alt="">
+        </a>
+        <nav>
+            <a href="./tabelas.html">
+                <h3>
+                    Tabelas        
+                </h3>
+            </a>
+            <a href="./formulario.html">
+                <h3>
+                    Formulário        
+                </h3>
+            </a>
+            <a href="#Fotos">
+                <h3>
+                    Fotos        
+                </h3>
+            </a>
+            <a href="#Videos">
+                <h3>
+                    Videos        
+                </h3>
+            </a>
+        </nav>
+    </header>
+
+    <section class="screen" id="Tabelas">
+        <section class="display">
+            <h1>Formulário</h1>
+
+            <form class="survey-form">
+                <div class="form-group">
+                    <label for="name">Enter your name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>    
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Age (optional)</label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <p>Wich option best describes yout current role?</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disabled selected>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend this website to a friend</p>
+                    <label>
+                        <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked>
+                        Definitely
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recommend" value="maybe" class="input-radio">
+                        Maybe
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recommend" value="notSure" class="input-radio">
+                        Not Sure
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>What is your favorite feature of this website?</p>
+                    <select name="mostLike" id="most-like" class="form-control" required>
+                        <option>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="openSource">Open Source</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What would you like to see improved?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
+                    </label>
+                </div>
+                <div class="form-group">
+
+                </div>
+                <div class="form-group">
+
+                </div>
+                
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="about-column">
+                <img src="img/ifsul-logo.png" alt="Logo Pag" class="mb-1">
+                <p class="mb-2"><span>IFSul</span>@2012</p>
+                <p>Campus Santana do Livramento <br>
+                    Av. Paul Harris, 410 - Bairro Centro - Santana do Livramento/RS <br>
+                <a href="tel:+5536211190">(55) 3621- 1190</a> | <a href="mailto:sl-gabdir@ifsul.edu.br">sl-gabdir@ifsul.edu.br</a></p>
+            </div>
+            <nav class="mb-2">
+                <a href="#">Início</a>
+                <a href="#">Cursos</a>
+                <a href="#">Eventos</a>
+                <a href="#">Contato</a>
+            </nav>
+            <form class="newsletter-form">
+                <label for="email" class="mb-1">Receba materiais gratuitos no seu email</label>
+                <input type="text" name="email" id="email" class="mb-1" placeholder="Digite o seu e-mail">
+                <button class="btn mb-2">Quero receber</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
