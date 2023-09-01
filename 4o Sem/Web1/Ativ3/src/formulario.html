@@ -24,12 +24,12 @@
                     Formulário        
                 </h3>
             </a>
-            <a href="#Fotos">
+            <a href="./fotos.html">
                 <h3>
                     Fotos        
                 </h3>
             </a>
-            <a href="#Videos">
+            <a href="./videos.html">
                 <h3>
                     Videos        
                 </h3>
@@ -37,102 +37,75 @@
         </nav>
     </header>
 
-    <section class="screen" id="Tabelas">
+    <section class="screen">
         <section class="display">
             <h1>Formulário</h1>
 
             <form class="survey-form">
                 <div class="form-group">
-                    <label for="name">Enter your name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>    
+                    <label for="name">Insira seu nome completo</label>
+                    <input type="text" name="name" class="form-control" placeholder="José da Silva" required>    
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    <input type="email" name="email" class="form-control" placeholder="Insira seu melhor email" required>
                 </div>
                 <div class="form-group">
-                    <label for="number">Age (optional)</label>
-                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+                    <label for="number">Idade</label>
+                    <input type="number" name="Idade" min="12" max="99" class="form-control" placeholder=">12" required>
                 </div>
-                <div class="form-group">
-                    <p>Wich option best describes yout current role?</p>
-                    <select name="role" id="dropdown" class="form-control" required>
-                        <option disabled selected>Select current role</option>
-                        <option value="student">Student</option>
-                        <option value="job">Full Time Job</option>
-                        <option value="learner">Full Time Learner</option>
-                        <option value="preferNo">Prefer not to say</option>
-                        <option value="other">Other</option>
+                <p>Qual opção descreve melhor a sua profissão?</p>
+                <div class="select">
+                    <select name="role" class="form-control" required>
+                        <option disabled selected>Selecione função atual</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="trabalho">Trabalho Integral</option>
+                        <option value="aprendiz">Aprendiz Integral</option>
+                        <option value="prefiroNao">Prefiro não dizer</option>
+                        <option value="outro">Outro</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <p>Would you recommend this website to a friend</p>
-                    <label>
-                        <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked>
-                        Definitely
-                    </label>
-                    <label>
-                        <input type="radio" name="user-recommend" value="maybe" class="input-radio">
-                        Maybe
-                    </label>
-                    <label>
-                        <input type="radio" name="user-recommend" value="notSure" class="input-radio">
-                        Not Sure
-                    </label>
+                <p>Você recomendaria este site para um amigo?</p>
+
+                <div class="reco-group">
+                    <ul>
+                        <li>
+                            <input type="radio" id="f-option" name="selector">
+                            <label for="f-option">Definitivamente</label>
+                            
+                            <div class="check"></div>
+                        </li>
+                    
+                        <li>
+                            <input type="radio" id="s-option" name="selector">
+                            <label for="s-option">Talvez</label>
+                            
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                        
+                        <li>
+                            <input type="radio" id="t-option" name="selector">
+                            <label for="t-option">Não tenho certeza</label>
+                            
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <p>What is your favorite feature of this website?</p>
-                    <select name="mostLike" id="most-like" class="form-control" required>
-                        <option>Select an option</option>
-                        <option value="challenges">Challenges</option>
-                        <option value="projects">Projects</option>
-                        <option value="community">Community</option>
-                        <option value="openSource">Open Source</option>
+                
+                <p>Qual foi a melhor tela desse site?</p>
+                <div class="select">
+                    <select name="mostLike" class="form-control" required>
+                        <option selected disabled>Selecione uma opção</option>
+                        <option value="menu">Menu</option>
+                        <option value="tabelas">Tabelas</option>
+                        <option value="formulario">Formulário</option>
+                        <option value="Fotos">Fotos</option>
+                        <option value="videos">Vídeos</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <p>What would you like to see improved?
-                        <span class="clue">(Check all that apply)</span>
-                    </p>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                    <label>
-                        <input type="checkbox" name="prefer" class="input-checkbox" value="">
-                    </label>
-                </div>
-                <div class="form-group">
 
-                </div>
-                <div class="form-group">
-
+                <div class="button">
+                    <button class="btn" type="submit">Enviar</button>
                 </div>
                 
             </form>
@@ -156,7 +129,7 @@
             </nav>
             <form class="newsletter-form">
                 <label for="email" class="mb-1">Receba materiais gratuitos no seu email</label>
-                <input type="text" name="email" id="email" class="mb-1" placeholder="Digite o seu e-mail">
+                <input type="text" name="email" class="mb-1" placeholder="Digite o seu e-mail">
                 <button class="btn mb-2">Quero receber</button>
             </form>
         </div>
