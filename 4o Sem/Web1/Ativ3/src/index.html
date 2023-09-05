@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFSul</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IFSul</title>
+        
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body> 
+        <section class="screen flow" id="Inicio">
+            <div class="display home flow">
+                <nav class="mt-1">
+                    <a href="https://utu.com">
+                        <img src="./img/utu-logo.png" alt="Logo da UTU">
+                    </a>
+                    <a class="ifsul" href="https://ifsul.com">
+                        <img src="./img/ifsul-logo.png" alt="Logo do IFsul">
+                    </a>
+                    <a class="utec" href="https://utec.com">
+                        <img src="./img/UTEC-logo.png" alt="Logo da UTEC">
+                    </a>
+                </nav>
+                <h1>Bem vindos!</h1>
+                <p class="text-center subtitle mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, harum! Laudantium delectus et assumenda. </p>
+                <button class="mb-1">
+                    <a href="#menu" class="button">
+                        <img style="margin-right: 5px;" src="./img/home-logo.png">
+                        <p>Menu</p>
+                        <img style="margin-right: none;margin-left: 3px;" src="./img/right-arrow.png">
+                    </a>
+                </button>
+            </div>
 
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body> 
-    <!-- Outras Páginas -->
-    <section class="screen" id="Inicio">
-        <div class="display home">
-            <nav class="mt-1">
-                <a href="https://utu.com">
-                    <img src="./img/utu-logo.png" alt="Logo da UTU">
-                </a>
-                <a class="ifsul" href="https://ifsul.com">
-                    <img src="./img/ifsul-logo.png" alt="Logo do IFsul">
-                </a>
-                <a class="utec" href="https://utec.com">
-                    <img src="./img/UTEC-logo.png" alt="Logo da UTEC">
-                </a>
-            </nav>
-            <h1>Bem vindos!</h1>
-            <p class="text-center subtitle mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, harum! Laudantium delectus et assumenda. </p>
-            <button class="mb-1">
-                <a href="#menu" class="button">
-                    <img style="margin-right: 5px;" src="./img/home-logo.png">
-                    <p>Menu</p>
-                    <img style="margin-right: none;margin-left: 3px;" src="./img/right-arrow.png">
-                </a>
-            </button>
-        </div>
-    </section>
-
-    <main id="menu" class="page-content mt-2">
+            <div class="overlay"></div>
+        </section>
+        
+        
+        <main id="menu" class="page-content mt-2">
         <div class="card">
             <div class="content">
                 <h2 class="title">Tabelas</h2>
@@ -63,31 +65,33 @@
                 <a href="./videos.html"><button class="btn">Ver vídeos</button></a>
             </div>
         </div>
-    </main>
+        </main>
 
-    <footer>
-        <div class="container">
-            <div class="about-column">
-                <img src="img/ifsul-logo.png" alt="Logo Pag" class="mb-1">
-                <p class="mb-2"><span>IFSul</span>@2012</p>
-                <p>Campus Santana do Livramento <br>
-                    Av. Paul Harris, 410 - Bairro Centro - Santana do Livramento/RS <br>
-                <a href="tel:+5536211190">(55) 3621- 1190</a> | <a href="mailto:sl-gabdir@ifsul.edu.br">sl-gabdir@ifsul.edu.br</a></p>
+        <footer>
+            <div class="container">
+                <div class="about-column">
+                    <img src="img/ifsul-logo.png" alt="Logo Pag" class="mb-1">
+                    <p class="mb-2"><span>IFSul</span>@2012</p>
+                    <p>Campus Santana do Livramento <br>
+                        Av. Paul Harris, 410 - Bairro Centro - Santana do Livramento/RS <br>
+                    <a href="tel:+5536211190">(55) 3621- 1190</a> | <a href="mailto:sl-gabdir@ifsul.edu.br">sl-gabdir@ifsul.edu.br</a></p>
+                </div>
+                <nav class="mb-2">
+                    <a href="#">Início</a>
+                    <a href="#">Cursos</a>
+                    <a href="#">Eventos</a>
+                    <a href="#">Contato</a>
+                </nav>
+                <form class="newsletter-form">
+                    <label for="email" class="mb-1">Receba materiais gratuitos no seu email</label>
+                    <input type="text" name="email" id="email" class="mb-1" placeholder="Digite o seu e-mail">
+                    <button class="btn mb-2">Quero receber</button>
+                </form>
             </div>
-            <nav class="mb-2">
-                <a href="#">Início</a>
-                <a href="#">Cursos</a>
-                <a href="#">Eventos</a>
-                <a href="#">Contato</a>
-            </nav>
-            <form class="newsletter-form">
-                <label for="email" class="mb-1">Receba materiais gratuitos no seu email</label>
-                <input type="text" name="email" id="email" class="mb-1" placeholder="Digite o seu e-mail">
-                <button class="btn mb-2">Quero receber</button>
-            </form>
-        </div>
-    </footer>
+            <div class="overlay"></div>
+        </footer>
 
-    <script src="./js/script.js"></script>
-</body>
+        <script src="./js/script.js"></script>
+        <script src="./js/hoverCards.js"></script>
+    </body>
 </html>

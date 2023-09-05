@@ -37,8 +37,8 @@
         </nav>
     </header>
 
-    <section class="screen">
-        <section class="display">
+    <section class="screen flow">
+        <div class="display flow">
             <h1>Formulário</h1>
 
             <form class="survey-form">
@@ -70,7 +70,7 @@
                 <div class="reco-group">
                     <ul>
                         <li>
-                            <input type="radio" id="f-option" name="selector">
+                            <input checked type="radio" id="f-option" name="selector">
                             <label for="f-option">Definitivamente</label>
                             
                             <div class="check"></div>
@@ -109,7 +109,8 @@
                 </div>
                 
             </form>
-        </section>
+        </div>
+        <div class="overlay"></div>
     </section>
 
     <footer>
@@ -134,5 +135,7 @@
             </form>
         </div>
     </footer>
+
+    <script src="./js/hoverCards.js"></script>
 </body>
 </html>
