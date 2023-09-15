@@ -1,0 +1,44 @@
+div {
+  border: 1px solid;
+}
+div > * {
+  display: grid;
+  place-items: center;
+}
+
+.grid1 {
+  display: grid;
+
+  grid-template-columns: 1fr, 1fr, 1fr, 2fr;
+
+  grid-auto-rows: minmax(100px, auto);
+  /* Altura de todos com 200px */
+  grid-auto-columns: minmax(200px, auto);
+}
+
+.um {
+  grid-column: 1/5;
+  background-color: lawngreen;
+}
+.dois {
+  background-color: darkgoldenrod;
+}
+.tres {
+  background-color: blueviolet;
+}
+.quatro {
+  grid-column: 3/5;
+  background-color: fuchsia;
+}
+.cinco {
+  background-color: darkblue;
+}
+.seis {
+  grid-column: 2/5;
+  background-color: red;
+}
+
+.grid2,
+.grid3 {
+  display: none;
+}
