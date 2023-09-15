@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+header {
+  position: initial;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.btn + .cl {
+  grid-column: 2/2;
+}
+
+.grid1,
+.grid2,
+.grid3 {
+  display: none;
+}
