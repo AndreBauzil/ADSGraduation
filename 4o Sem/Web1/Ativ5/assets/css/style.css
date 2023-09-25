@@ -5,12 +5,237 @@
     text-decoration: none;
 }
 
+
 body {
     background-color: #000;
     color: darkred;
 }
 
 section {
-    border: 1px solid gold;
-    margin: 1rem 0;
+    /* border: 1px solid gold; */
+    margin: 1rem auto;
+    
+    width: 100vw;
+    
+    display: grid;
+}
+
+
+/* Links Aside */
+aside {
+    position: fixed;
+    top: 50%;
+    right: -7%;
+    padding-right: 2.5rem;
+}
+aside nav {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+aside nav > a{
+    width: 180px;
+
+    max-width: calc(100% / 4);
+}
+aside nav > a > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 1rem;
+}
+header > img {
+    max-width: 50px;
+}
+
+header nav {
+    display: flex;
+}
+header > nav > a {
+    padding: .5rem;
+    margin: 1px;
+    border-bottom: 2px solid darkred;
+    color: gold;
+    
+    display: inline-block;
+    
+    transition: border-bottom .3s;
+}
+header > nav > a:hover {
+    color: darkred;
+    border-bottom: 2px solid gold; 
+    transition: border-bottom .3s;
+} 
+
+/* Main */
+main {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+main > a {
+    padding: 10px 0; 
+    margin-top: 2rem;
+    min-width: 980px;
+
+    color: gold; 
+    background-color: #000;
+    font-size: 2.35rem;
+
+    z-index: 1;
+    position: absolute;
+    left: 14%;
+    top: 100px;
+}
+
+/* Ultimo Jogo */
+section.resultado {
+    height: auto;
+    padding: 2rem;
+    
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+    background-color: gold;
+    border: 2px solid darkred;
+    min-width: 100vw;
+}
+.resultado > h4 {
+    padding-bottom: 1rem;
+}
+.placar {
+    display: flex;
+    font-size: 3rem;
+    align-items: flex-end;
+}span {
+    color: gold;
+}
+.placar > img {
+    width: 60px;
+    margin: 0 1rem;
+}
+
+/* Patrocinadores */
+.patrocinadores {
+    height: 20vh;
+
+    display: grid;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+
+    background-color: darkred;
+    min-width: 100%;
+    border: 2px solid gold;
+}
+.imgPatroci {
+    display: flex;
+    align-items: center;
+}
+.imgPatroci > a > * {
+    margin: 0 .75rem;
+    padding: 20px 0;
+    max-width: 100px;
+}
+
+/* Futuros Jogos */
+.proximos {
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    color: gold;
+    background-color: black;
+    border: 2px solid gold;
+
+    min-width: 100%;
+}
+.proximos > * {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+
+    max-height: 100%;
+}
+.data {
+    font-size: 14px;
+    font-weight: 100;
+    padding: 5px 0;
+}
+.times {
+    display: flex;
+    align-items: flex-end;
+}
+.proximo > .times > * {
+    max-width: 60px;
+}
+.proximo > * {
+    padding: 20px;
+}
+.futuros > .times > * {
+    max-width: 50px;
+}
+
+/* Notícias com cards */
+.noticias {
+    grid-template-rows: auto 1fr;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+
+    gap: 20px;
+
+    padding-top: 1rem;
+}
+.card {
+    color: #000;
+    background-color: gold;
+    border: 2px solid darkred;
+
+    display: grid;
+    justify-items: center;
+
+    padding-top: 4px;
+}
+.card > img {
+    width: 130px;
+}
+.card > * {
+    justify-self: center;
+    padding: .25rem;
+
+    text-align: center;
+    font-size: 12px;
+}
+.card > .titulo {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    display: grid;
+    justify-items: flex-end;
+}
+
+/* Responsividade */
+@media screen and (min-width: 944px) {
+    section {
+        max-width: 944px;
+    }
 }
