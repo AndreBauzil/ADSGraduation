@@ -17,6 +17,24 @@ package main;
 // }
 
 public class Banco {
+    boolean cinto = false; 
+
+    public boolean isSafe() {
+        if (cinto) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void colocarCinto() {
+        cinto = true;
+    }
+    public void tirarCinto() {
+        cinto = false;
+    }
+
+
     public void ajustarPosicao() {
         System.out.println("Banco ajustado.");
     }
