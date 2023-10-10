@@ -23,15 +23,18 @@ package main;
 
 
 public class Pneu {
-
     private double calibragem;
 
     public Pneu(double calibragem) {
         this.calibragem = calibragem;
     }
 
-    public void girarPneus() {
-        System.out.println("Pneus girando.");
+    public String girarPneus(Banco banco) {
+        if (banco.isSafe() == true) {
+            return "Pneus girando.";
+        } else {
+            return "Por favor coloque o cinto!";
+        }
     }
 
     public boolean precisaCalibrarPneus() {
