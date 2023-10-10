@@ -1,9 +1,11 @@
 package main;
-// Classe Carro
 
 import java.text.DecimalFormat;
 
+// Classe Carro
 public class Carro {
+    // Atributos
+        // gasolina
     private double km;
     private double kmPorLitro;
     private double tanque;
@@ -73,7 +75,7 @@ public class Carro {
             System.out.print("Carro com tanque vazio, abasteça para dirigir.");
         } else {
             System.out.println("Carro em movimento.");
-            pneu.girarPneus();
+            pneu.girarPneus(banco);
             this.setKm(km);
             this.consumir(km);
             System.out.println("O carro rodou " + km + "KMs");
@@ -130,6 +132,20 @@ public class Carro {
             return nivelTanque;
         }
     }
+
+    public Pneu getPneu() {
+        return this.pneu;
+    }
+    public Banco getBanco() {
+        return this.banco;
+    }
+    public Motor getMotor() {
+        return motor;
+    }
+    public Vidro getVidro() {
+        return vidro;
+    }
+
 
     // setters
     public void setKm(double km) {
