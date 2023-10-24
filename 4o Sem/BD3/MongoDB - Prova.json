@@ -1,0 +1,92 @@
+// Nome: Andre Bauzil
+// 1. Crie uma database chamada Avaliar e uma coleção chamada prova, popule-o com dados do arquivo csv disponibilizado
+    > use Avaliar
+    > db.createCollection("prova")
+    // Ir em "add data" e selecionar import .csv
+
+// 2. Retorne todos os personagens que contenha em seu nome "Rose" (0,5).
+    > db.prova.find({ "name": /Rose/i })
+    < {...18}
+
+// 3. Conte quantos personagens têm olhos vermelhos (0,5).
+    > db.prova.countDocuments({ "EYE": /^Red/ })
+    < 208
+
+// 4. Contabilize os personagens que apareceram após os anos 70 e antes de 2010 (1,0).
+    > db.prova.countDocuments({
+        "FIRST APPEARANCE": {$gt: 1970, $lt: 2010}
+    })
+    < 143
+
+// 5. Selecione todos OS personagens que têm cabelos loiros, olhos verdes e sejam mulheres (0,75).
+    > db.prova.find({
+        $and: [
+            {"HAIR": /^Blond/},
+            {"EYE": /^Green/},
+            {"SEX": /^Female/}
+        ]
+    })
+    < {...22}
+
+// 6. Retorne todos os personagens com identidade pública com aparições abaixo de 500 (0,75).
+    > db.prova.find({
+        $and: [
+            {"ID": /^Public/},
+            {"APPEARANCES": {$lt: 500}}
+        ]
+    })
+    < {...2346}
+
+// 7. Apresente somente OS campos: "NAME, ID, ALIGN, ALIVE, EYE, HAIR, SEX, APPEARANCES, FIRST APPEARANCES e YEAR", que o seu ano criação seja o maior de todos (0,75).
+    > db.prova.find(
+        {},
+        { 
+            "NAME": 1,
+            "ID": 1,
+            "ALIGN": 1,
+            "ALIVE": 1,
+            "EYE": 1,
+            "HAIR": 1,
+            "SEX": 1,
+            "APPEARANCES": 1,
+            "FIRST APPEARANCES": 1,
+            "YEAR": 1 
+        }
+    ).sort({ "YEAR": -1 }).limit(1)
+    < {...1}
+
+// 8. Retorne O personagem que apareceu menos vezes do sexo masculino vivo (0,75).
+    > db.prova.find({
+        $and: [
+            {"SEX": /^Male/},
+            {"ALIVE": /^Living/},
+            {"APPEARANCES": {$gt: 0}}
+    ]}).sort({ "APPEARANCES": 1 }).limit(1)
+    < {...1}
+
+// 9. Some todas as aparições dos personagens femininas com identidade secreta (1,0).
+    > db.prova.aggregate([
+        {$match: { "SEX": /^Female/, "ID": /^Secret/ }},
+        {$group: { _id: null, TotalApar: { $sum: "$APPEARANCES" }}
+    ])
+    < {
+        _id: null,
+        TotalApar: 18665
+    }
+
+// 10. Faça a média dos anos de criação dos personagens mortos (1,0).
+    > db.prova.aggregate([
+        {$match: { "ALIVE": /^Deceased/ }},
+        {$group: { _id: null, MediaAnos: { $avg: "$YEAR" }}
+    ])
+    < {
+        _id: null,
+        MediaAnos: 1988.4027283511268
+    }
+
+// 11. Delete todos oS personagens neutros de olhos pretos (0,5).
+    > db.prova.remove({ "ALIGN": /^Neutral/, "EYE": /^Black/ })
+    < {
+        acknowledged: true,
+        deletedCount: 45
+    }
