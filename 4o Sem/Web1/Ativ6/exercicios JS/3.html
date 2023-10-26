@@ -11,28 +11,43 @@
 			#centro{width:600px; float:right;}
 			h1{text-align:center;color:#FFC200}
 			span{cursor:pointer;}
+
+			/* ocultar por padrão noticias e parceiros */
+			#menu > div {display: none;}
 		</style>
 
 	
 	</head>
 	<body>
 		<div id="tudo">
-			<div id="fonte">Fonte: <span id="aumentarFonte">A+</span> <span id="normalFonte">A</span> <span id="diminuirFonte">A-</span></div>
-			<div id="cor">Alto Contraste: <span id="altoContrasteOn">On</span> <span id="altoContrasteOff">Off</span></div>
+			<div id="fonte">
+				Fonte: 
+				<span id="aumentarFonte">A+</span> 
+				<span id="normalFonte">A</span> 
+				<span id="diminuirFonte">A-</span>
+			</div>
+			<div id="cor">
+				Alto Contraste: 
+				<span id="altoContrasteOn">On</span> 
+				<span id="altoContrasteOff">Off</span>
+			</div>
+			
 			<h1>ClicFronteira</h1>
+
 			<div id="menu">
-				<span>Inicio<span><br>
+				<span>Inicio</span><br>
 				<span id="noticias">Noticias</span><br>
 				<div id="not">
-				Hoje<br>
-				Esse mês<br>
-				Procurar<br>
+					Hoje<br>
+					Esse mês<br>
+					Procurar<br>
 				</div>
+
 				<span id="parceiros">Parceiros</span><br>
 				<div id="par">
-				Ferragem Nochi<br>
-				Supermercado Righ<br>
-				Allianz Seguros<br>
+					Ferragem Nochi<br>
+					Supermercado Righ<br>
+					Allianz Seguros<br>
 				</div>
 			</div>
 			<div id="centro">
@@ -42,5 +57,7 @@
 				<a href="#" style="color:white;" id="link">Veja mais</a>
 			</div>
 		</div>
+
+		<script src="./Respostas/Terceiro.js"></script>
 	</body>
 </html>
