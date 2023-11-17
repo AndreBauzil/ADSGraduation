@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7 - Prog Web I</title>
+
+    <style>.exercicio {margin: 5rem 0;} html {background-color: black; color: white;}</style>
+</head>
+<body style="width: 100%; height: 100vh; display: grid;place-content: center;">
+    <main>
+        <div class="exercicio">
+            <p>1) Desenvolva uma função que conta quantos dias faltam para o seu próximo aniversário</p>
+            <label>Insira a data do seu aniversário:
+                <input type="date" id="aniver">
+            </label>
+
+            <button type="button" id="btn1">Calcular</button>
+            <p>Dias faltando: <span style="color: red;" id="result1"></span></p>
+        </div>
+
+
+        <div class="exercicio">
+            <p>2) Desenvolva uma função que calcula um número elevado a outro. </p>
+            <label>Insira dois números à serem calculados:
+                <input type="number" id="n1">
+                <input type="number" id="n2">
+            </label>
+            <button type="button" id="btn2">Calcular</button>
+            
+            <p>O resultado do cálculo é: <span id="result2"></span></p>
+        </div>
+
+        <div class="exercicio3">
+            <p>3,4,5) Desenvolva uma função que faz uma busca no array.</p>
+
+            <ol id="lista">
+                
+            </ol>
+
+            <label>Informe uma palavra a ser procurada:
+                <input type="text" id="String">
+            </label>
+
+            <button type="button" id="procurar">Procurar</button>
+            <button type="button" id="addInicio">Add Inicio</button>
+            <button type="button" id="addFinal">Add Final</button>
+            
+        </div>
+    </main>
+</body>
+<script src="assets/primeiro.js"></script>
+<script src="assets/segundo.js"></script>
+<script src="assets/resto.js"></script>
+</html>
