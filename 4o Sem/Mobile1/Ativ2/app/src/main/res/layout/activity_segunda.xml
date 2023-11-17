@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SegundaActivity">
+
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="159dp"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="58dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/txtLabelNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Digite aqui o seu nome"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/txtLabelTelefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone:"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edtTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  +55 91234-5678"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/txtLabelSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senha:"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  *********"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/txtLabelEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  email@email.com"
+                android:inputType="textEmailAddress" />
+
+
+            <TextView
+                android:id="@+id/txtLabelDataNascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Data de Nascimento:"
+                android:textSize="30sp"
+                />
+
+            <EditText
+                android:id="@+id/edtDataNascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  dd/mm/aaaa"
+                android:inputType="date" />
+
+            <LinearLayout
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="58dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLabelEndereco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Endereço:"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/edtEndereco"
+                    android:layout_width="163dp"
+                    android:layout_height="60dp"
+                    android:hint="  Av. Lorem Ipsum"
+                    android:inputType="text" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="58dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLabelNumero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Número:"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/edtNumero"
+                    android:layout_width="181dp"
+                    android:layout_height="50dp"
+                    android:hint="  Nº"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEnviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enviar" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="166dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btnVoltar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Voltar"
+                    android:text="Voltar" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
