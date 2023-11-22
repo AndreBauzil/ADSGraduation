@@ -1,15 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFNews</title>
+
+    <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
+        <img src="caminho/para/seu/logo_ifsul.png" alt="Logo IFNews">
         <nav>
-            u
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notícias</a></li>
+
+                <div class="dropdown">
+                    <button type="button"></button>
+                    <div class="dropdown-cont">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+
+                <label for="noticias">Notícias</label>
+                    <select name="noticias" id="noticias">
+                        <option value="esportes">Esportes</option>
+                        <option value="eventos">Eventos</option>
+                        <option value="institucional">Institucional</option>
+                        <option value="premiações">Premiações</option>
+                        <option value="envie-uma-noticia"></option>
+                    </select>
+
+                <li class="dropDown"><a href="#">Esportes</a></li>
+                <li class="dropDown"><a href="#">Eventos</a></li>
+                <li class="dropDown"><a href="#">Institucional</a></li>
+                <li class="dropDown"><a href="#">Premiações</a></li>
+                <li class="dropDown"><a href="#">Envie uma notícia</a></li>
+            </ul>
         </nav>
     </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Página Inicial -->
+        <section id="pagina-inicial">
+            <h2>Últimas Notícias</h2>
+
+            <!-- Destaque -->
+            <article class="destaque">
+                <img src="caminho/para/imagem_destaque.jpg" alt="Destaque">
+                <h3>Título da Notícia Destaque</h3>
+                <p>Texto resumido da notícia...</p>
+            </article>
+
+            <!-- Lista de Notícias -->
+            <section class="lista-noticias">
+                <!-- Repita este bloco para cada notícia -->
+                <article>
+                    <img src="caminho/para/imagem_noticia.jpg" alt="Notícia 1">
+                    <h3>Título da Notícia 1</h3>
+                    <p>Texto resumido da notícia...</p>
+                </article>
+                <!-- Repita conforme necessário -->
+
+            </section>
+
+            <!-- Contagem regressiva para o próximo Processo Seletivo -->
+            <div id="contagem-regressiva">
+                <p>Faltam <span id="dias-faltando">X</span> dias para o próximo Processo Seletivo do IFSul.</p>
+            </div>
+
+            <!-- Logos UTU e UTEC -->
+            <section id="logos">
+                <a href="link_para_UTU"><img src="caminho/para/logo_UTU.png" alt="Logo UTU"></a>
+                <a href="link_para_UTEC"><img src="caminho/para/logo_UTEC.png" alt="Logo UTEC"></a>
+            </section>
+
+            <!-- Depoimentos de estudantes -->
+            <section id="depoimentos">
+                <!-- Repita este bloco para cada depoimento -->
+                <article>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."</p>
+                    <p class="autor">- Nome do Estudante</p>
+                </article>
+                <!-- Repita conforme necessário -->
+            </section>
+
+        </section>
+
+        <!-- Página de 1 Categoria -->
+        <section id="pagina-categoria">
+            <h2>Categoria X</h2>
+            <!-- Repita este bloco para cada notícia na categoria -->
+            <article>
+                <img src="caminho/para/imagem_noticia_categoria.jpg" alt="Notícia Categoria 1">
+                <h3>Título da Notícia Categoria 1</h3>
+                <p>Texto resumido da notícia...</p>
+            </article>
+            <!-- Repita conforme necessário -->
+        </section>
+
+        <!-- Página de 1 Notícia -->
+        <section id="pagina-noticia">
+            <h2>Título da Notícia</h2>
+            <article>
+                <!-- Área de Fotos -->
+                <div id="area-fotos">
+                    <img src="caminho/para/imagem_noticia_grande.jpg" alt="Imagem Grande">
+                    <!-- Repita este bloco para cada miniatura -->
+                    <img src="caminho/para/imagem_miniatura_1.jpg" alt="Miniatura 1">
+                    <!-- Repita conforme necessário -->
+                </div>
+                <!-- Texto da Notícia -->
+                <p>Texto completo da notícia...</p>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 IFNews. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
