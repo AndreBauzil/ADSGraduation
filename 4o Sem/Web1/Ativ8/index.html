@@ -1,134 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFNews</title>
-
+    <title>Seu Site</title>
     <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <img src="caminho/para/seu/logo_ifsul.png" alt="Logo IFNews">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Notícias</a></li>
-
-                <div class="dropdown">
-                    <button type="button"></button>
-                    <div class="dropdown-cont">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+    <main>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <img src="assets/imgs/logoIF.png" alt="">
+ 
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#" class="navbar__link">Início</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Notícias</a></li>
+                <li class="navbar__item dropdown">
+                    <a href="#" class="navbar__link">Categorias</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-content__link">Esportes</a>
+                        <a href="#" class="dropdown-content__link">Eventos</a>
+                        <a href="#" class="dropdown-content__link">Institucional</a>
+                        <a href="#" class="dropdown-content__link">Premiações</a>
+                        <a href="#" class="dropdown-content__link">Envie uma notícia</a>
                     </div>
-                </div>
-
-                <label for="noticias">Notícias</label>
-                    <select name="noticias" id="noticias">
-                        <option value="esportes">Esportes</option>
-                        <option value="eventos">Eventos</option>
-                        <option value="institucional">Institucional</option>
-                        <option value="premiações">Premiações</option>
-                        <option value="envie-uma-noticia"></option>
-                    </select>
-
-                <li class="dropDown"><a href="#">Esportes</a></li>
-                <li class="dropDown"><a href="#">Eventos</a></li>
-                <li class="dropDown"><a href="#">Institucional</a></li>
-                <li class="dropDown"><a href="#">Premiações</a></li>
-                <li class="dropDown"><a href="#">Envie uma notícia</a></li>
+                </li>
             </ul>
         </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-
-        <!-- Página Inicial -->
-        <section id="pagina-inicial">
-            <h2>Últimas Notícias</h2>
-
-            <!-- Destaque -->
-            <article class="destaque">
-                <img src="caminho/para/imagem_destaque.jpg" alt="Destaque">
-                <h3>Título da Notícia Destaque</h3>
-                <p>Texto resumido da notícia...</p>
-            </article>
-
-            <!-- Lista de Notícias -->
-            <section class="lista-noticias">
-                <!-- Repita este bloco para cada notícia -->
-                <article>
-                    <img src="caminho/para/imagem_noticia.jpg" alt="Notícia 1">
-                    <h3>Título da Notícia 1</h3>
-                    <p>Texto resumido da notícia...</p>
-                </article>
-                <!-- Repita conforme necessário -->
-
-            </section>
-
-            <!-- Contagem regressiva para o próximo Processo Seletivo -->
-            <div id="contagem-regressiva">
-                <p>Faltam <span id="dias-faltando">X</span> dias para o próximo Processo Seletivo do IFSul.</p>
-            </div>
-
-            <!-- Logos UTU e UTEC -->
-            <section id="logos">
-                <a href="link_para_UTU"><img src="caminho/para/logo_UTU.png" alt="Logo UTU"></a>
-                <a href="link_para_UTEC"><img src="caminho/para/logo_UTEC.png" alt="Logo UTEC"></a>
-            </section>
-
-            <!-- Depoimentos de estudantes -->
-            <section id="depoimentos">
-                <!-- Repita este bloco para cada depoimento -->
-                <article>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."</p>
-                    <p class="autor">- Nome do Estudante</p>
-                </article>
-                <!-- Repita conforme necessário -->
-            </section>
-
+    
+        <!-- Conteúdo da Home -->
+        <section class="home">
+            <h1 class="home__title">Seja bem vind<span></span> à IFNews</h1>
+            <a class="home__link" href="#noticias">Começar</a>
         </section>
 
-        <!-- Página de 1 Categoria -->
-        <section id="pagina-categoria">
-            <h2>Categoria X</h2>
-            <!-- Repita este bloco para cada notícia na categoria -->
-            <article>
-                <img src="caminho/para/imagem_noticia_categoria.jpg" alt="Notícia Categoria 1">
-                <h3>Título da Notícia Categoria 1</h3>
-                <p>Texto resumido da notícia...</p>
-            </article>
-            <!-- Repita conforme necessário -->
-        </section>
-
-        <!-- Página de 1 Notícia -->
-        <section id="pagina-noticia">
-            <h2>Título da Notícia</h2>
-            <article>
-                <!-- Área de Fotos -->
-                <div id="area-fotos">
-                    <img src="caminho/para/imagem_noticia_grande.jpg" alt="Imagem Grande">
-                    <!-- Repita este bloco para cada miniatura -->
-                    <img src="caminho/para/imagem_miniatura_1.jpg" alt="Miniatura 1">
-                    <!-- Repita conforme necessário -->
-                </div>
-                <!-- Texto da Notícia -->
-                <p>Texto completo da notícia...</p>
+        <!-- Destaque Principal -->
+        <section class="destaque">
+            <article class="destaque__item">
+                <header class="destaque__header">
+                    <h2 class="destaque__title">Título do Destaque</h2>
+                    <p class="destaque__date">Data da Notícia</p>
+                </header>
+                <img src="destaque.jpg" alt="Imagem do Destaque" class="destaque__image">
+                <p class="destaque__text">Texto do destaque...</p>
             </article>
         </section>
 
+        <!-- Outras Notícias -->
+        <section class="noticias">
+            <article class="noticias__item">
+                <h3 class="noticias__title">Notícia 1</h3>
+                <p class="noticias__summary">Resumo da notícia 1...</p>
+            </article>
+            <!-- Repetir para outras notícias -->
+        </section>
+
+        <!-- Contagem Regressiva -->
+        <section class="contador">
+            <h3 class="contador__title">Próximo Processo Seletivo</h3>
+            <p id="contador" class="contador__timer">Calculando...</p>
+        </section>
+
+        <!-- Logos -->
+        <section class="logos">
+            <img src="utu-logo.png" alt="Logo UTU" class="logos__logo" data-link="utu-link.html">
+            <img src="utec-logo.png" alt="Logo UTEC" class="logos__logo" data-link="utec-link.html">
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="depoimentos">
+            <article class="depoimentos__item">
+                <header class="depoimentos__header">
+                    <h3 class="depoimentos__title">Depoimento 1</h3>
+                </header>
+                <p class="depoimentos__text">Texto do depoimento 1...</p>
+            </article>
+            <!-- Repetir para outros depoimentos -->
+        </section>
     </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 IFNews. Todos os direitos reservados.</p>
-    </footer>
-
 </body>
 </html>
