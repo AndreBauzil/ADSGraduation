@@ -10,13 +10,13 @@
     <main>
         <!-- Navbar -->
         <nav class="navbar">
-            <img src="assets/imgs/logoIF.png" alt="">
+            <img src="./assets/imgs/logoIF.png" alt="">
  
             <ul class="navbar__list">
                 <li class="navbar__item"><a href="#" class="navbar__link">Início</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Notícias</a></li>
+                <li class="navbar__item"><a href="#noticias" class="navbar__link">Notícias</a></li>
                 <li class="navbar__item dropdown">
-                    <a href="#" class="navbar__link">Categorias</a>
+                    <a class="navbar__link">Categorias</a>
                     <div class="dropdown-content">
                         <a href="#" class="dropdown-content__link">Esportes</a>
                         <a href="#" class="dropdown-content__link">Eventos</a>
@@ -49,7 +49,7 @@
         </section>
 
         <!-- Outras Notícias -->
-        <section class="noticias">
+        <section id="noticias" class="noticias">
             <div class="noticias__item">
                 <img src="./assets/imgs/noticia-1.jpg" alt="">
                 <div class="noticias__cont">
@@ -118,26 +118,43 @@
 
         <!-- Contagem Regressiva -->
         <section class="contador">
-            <h3 class="contador__title">Próximo Processo Seletivo</h3>
+            <h3 class="contador__title">Próximo Processo Seletivo:</h3>
             <p id="contador" class="contador__timer">Calculando...</p>
         </section>
 
         <!-- Logos -->
         <section class="logos">
-            <img src="utu-logo.png" alt="Logo UTU" class="logos__logo" data-link="utu-link.html">
-            <img src="utec-logo.png" alt="Logo UTEC" class="logos__logo" data-link="utec-link.html">
+            <h1>Instituições Irmãs:</h1>
+            <div class="logos__imgs">
+                <img src="utu-logo.png" alt="Logo UTU" class="logos__logo" data-link="utu-link.html">
+                <img src="utec-logo.png" alt="Logo UTEC" class="logos__logo" data-link="utec-link.html">
+            </div>
         </section>
 
         <!-- Depoimentos -->
         <section class="depoimentos">
-            <article class="depoimentos__item">
+            <div class="depoimentos__item">
                 <header class="depoimentos__header">
                     <h3 class="depoimentos__title">Depoimento 1</h3>
                 </header>
-                <p class="depoimentos__text">Texto do depoimento 1...</p>
-            </article>
+                <p class="depoimentos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam dignissimos harum molestias ducimus labore fugit eos aliquam ipsam, tenetur quisquam voluptatem, commodi officiis nesciunt aperiam? Distinctio asperiores tenetur recusandae.</p>
+            </div>
+            <div class="depoimentos__item">
+                <header class="depoimentos__header">
+                    <h3 class="depoimentos__title">Depoimento 1</h3>
+                </header>
+                <p class="depoimentos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam dignissimos harum molestias ducimus labore fugit eos aliquam ipsam, tenetur quisquam voluptatem, commodi officiis nesciunt aperiam? Distinctio asperiores tenetur recusandae.</p>
+            </div>
+            <div class="depoimentos__item">
+                <header class="depoimentos__header">
+                    <h3 class="depoimentos__title">Depoimento 1</h3>
+                </header>
+                <p class="depoimentos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam dignissimos harum molestias ducimus labore fugit eos aliquam ipsam, tenetur quisquam voluptatem, commodi officiis nesciunt aperiam? Distinctio asperiores tenetur recusandae.</p>
+            </div>
             <!-- Repetir para outros depoimentos -->
         </section>
+
+        <script src="./assets/js/contador.js"></script>
     </main>
 </body>
 </html>
