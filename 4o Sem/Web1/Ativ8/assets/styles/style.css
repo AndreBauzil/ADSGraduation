@@ -23,28 +23,44 @@ section {
     display: grid;
     justify-content: center;
     min-width: 100%;
-    min-height: 98vh;
+    min-height: 90vh;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #333;
+    width: 100%;
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: #333;
 }
+.navbar > img {
+    width: 30%;
+    height: auto;
+}
+
 .navbar__list {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    width: 50%;
+    margin-right: 20px;
+    font-size: 30px;
 }
+
 .navbar__item {
     margin-right: 15px;
 }
+
 .navbar__link {
     text-decoration: none;
     color: #fff;
 }
+
 
 .dropdown-content {
     display: none;
@@ -52,11 +68,11 @@ section {
     background-color: #f9f9f9;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: .75rem;
+    margin-top: 2.85rem;
 }
 .dropdown-content__link {
     color: #333;
-    padding: 12px 16px;
+    padding: 12px 13px;
     display: block;
     text-decoration: none;
 }
@@ -86,10 +102,10 @@ section {
     margin-top: 20px;
 }
 
-.destaque:hover .destaque__main .destaque__text {
+/* .destaque:hover .destaque__main .destaque__text {
     color: #000;
     opacity: 1;
-}
+} */
 
 .destaque__item {
     border: 1px solid #ccc;
@@ -98,13 +114,12 @@ section {
     align-items: flex-end;
     background: no-repeat url(../imgs/destaque.jpg) center;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .destaque__main {
     padding: 1.5rem;
     position: relative;
-    opacity: 0.7;
+    opacity: 0.5;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 2rem 2rem 0rem 0rem;
     transition: all 0.2s;
@@ -113,15 +128,17 @@ section {
 .destaque__title {
     font-size: 40px;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 .destaque__date {
     color: #fff;
+    font-size: 1.5rem;
 }
 
 .destaque__text {
-    color: #333;
-    padding-top: 2rem;
+    color: #c9c9c9;
+    padding-top: 1.5rem;
 }
 
 /* Adiciona transição para a opacidade no .destaque__main */
@@ -142,44 +159,48 @@ section {
     border: 1px solid #ccc;
     margin-bottom: 20px;
     position: relative;
-    overflow: hidden; /* Adicione esta linha para esconder as partes da imagem que ultrapassam a div */
+    overflow: hidden; 
+    display: flex;
+    align-items: flex-end;
+}
+
+.noticias__cont {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 2rem 2rem 0rem 0rem;
+    transition: all 0.2s;
+    opacity: 0.7;
+}
+.noticias__item:hover .noticias__cont {
+    opacity: 1;
 }
 
 .noticias__title {
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 .noticias__summary {
-    color: #555;
+    color: #c9c9c9;
 }
 
-/* Adicione um seletor de classe comum para as imagens de fundo */
+
 .noticias__item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Para garantir que a imagem cubra completamente a div */
+    object-fit: cover; 
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+    z-index: -1; 
 }
-
-/* Adicione as classes comuns a todas as divs */
-/* .noticias__item.um img { background-image: url(../imgs/noticia-1.jpg); }
-.noticias__item.dois img { background-image: url(../imgs/noticia-2.jpg); }
-.noticias__item.tres img { background-image: url(../imgs/noticia-3.jpg); }
-.noticias__item.quatro img { background-image: url(../imgs/noticia-4.jpg); }
-.noticias__item.cinco img { background-image: url(../imgs/noticia-5.jpg); }
-.noticias__item.seis img { background-image: url(../imgs/noticia-6.jpg); }
-.noticias__item.sete img { background-image: url(../imgs/noticia-7.jpg); }
-.noticias__item.oito img { background-image: url(../imgs/noticia-8.jpg); }
-.noticias__item.nove img { background-image: url(../imgs/noticia-9.jpg); } */
-
 
 /* Contagem Regressiva */
 .contador {
     margin-top: 20px;
+    justify-items: center;
+    align-content: center;
 }
 .contador__title {
     font-size: 20px;
@@ -192,8 +213,8 @@ section {
 
 /* Logos */
 .logos {
-    display: flex;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: center;
     margin-top: 20px;
 }
 .logos__logo {
