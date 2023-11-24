@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Site</title>
+    <title>IFNews</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
@@ -30,7 +32,7 @@
     
         <!-- Conteúdo da Home -->
         <section class="home">
-            <h1 class="home__title">Seja bem vind<span></span> à IFNews</h1>
+            <h1 class="home__title">Seja bem vind<span></span><br> ao IFNews</h1>
             <a class="home__link" href="#destaque">Começar</a>
         </section>
 
@@ -42,9 +44,6 @@
                     <p class="destaque__date">22 de Agosto de 2023</p>
                     <p class="destaque__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad dignissimos consequuntur veniam ex, enim cum porro dicta quis...</p>
                 </div>
-                    <!-- <div class="destaque__right">
-                    <img src="/assets/imgs/destaque.jpg" alt="Imagem do Destaque" class="destaque__image">
-                </div> -->
             </article>
         </section>
 
@@ -126,35 +125,48 @@
         <section class="logos">
             <h1>Instituições Irmãs:</h1>
             <div class="logos__imgs">
-                <img src="utu-logo.png" alt="Logo UTU" class="logos__logo" data-link="utu-link.html">
-                <img src="utec-logo.png" alt="Logo UTEC" class="logos__logo" data-link="utec-link.html">
-            </div>
+                <a target="_blank" href="https://www.utu.edu.uy/"><img src="./assets/imgs/logoUTU.png" alt="Logo UTU" class="logos__logo"></a>
+                <a target="_blank" href="https://utec.edu.uy/pt/"><img src="./assets/imgs/logoUTEC.png" alt="Logo UTEC" class="logos__logo"></a>
+            </div>            
         </section>
-
+ 
         <!-- Depoimentos -->
         <section class="depoimentos">
-            <div class="depoimentos__item">
-                <header class="depoimentos__header">
-                    <h3 class="depoimentos__title">Depoimento 1</h3>
-                </header>
-                <p class="depoimentos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam dignissimos harum molestias ducimus labore fugit eos aliquam ipsam, tenetur quisquam voluptatem, commodi officiis nesciunt aperiam? Distinctio asperiores tenetur recusandae.</p>
+            <div id="myCarousel" class="owl-carousel">
+                <div class="depoimentos__item">
+                    <header class="depoimentos__header">
+                        <h3 class="depoimentos__title">Andre G. Bauzil</h3>
+                    </header>
+                    <p class="depoimentos__text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam dignissimos harum molestias ducimus labore fugit eos aliquam ipsam, tenetur quisquam voluptatem, commodi officiis nesciunt aperiam? Distinctio asperiores tenetur recusandae."</p>
+                </div>
+                <div class="depoimentos__item">
+                    <header class="depoimentos__header">
+                        <h3 class="depoimentos__title">João Duarte Almeida</h3>
+                    </header>
+                    <p class="depoimentos__text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam dignissimos harum molestias ducimus labore fugit eos aliquam ipsam, tenetur quisquam voluptatem, commodi officiis nesciunt aperiam? Distinctio asperiores tenetur recusandae."</p>
+                </div>
+                <div class="depoimentos__item">
+                    <header class="depoimentos__header">
+                        <h3 class="depoimentos__title">Laura Bonaparte</h3>
+                    </header>
+                    <p class="depoimentos__text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam dignissimos harum molestias ducimus labore fugit eos aliquam ipsam, tenetur quisquam voluptatem, commodi officiis nesciunt aperiam? Distinctio asperiores tenetur recusandae."</p>
+                </div>
             </div>
-            <div class="depoimentos__item">
-                <header class="depoimentos__header">
-                    <h3 class="depoimentos__title">Depoimento 1</h3>
-                </header>
-                <p class="depoimentos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam dignissimos harum molestias ducimus labore fugit eos aliquam ipsam, tenetur quisquam voluptatem, commodi officiis nesciunt aperiam? Distinctio asperiores tenetur recusandae.</p>
-            </div>
-            <div class="depoimentos__item">
-                <header class="depoimentos__header">
-                    <h3 class="depoimentos__title">Depoimento 1</h3>
-                </header>
-                <p class="depoimentos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam dignissimos harum molestias ducimus labore fugit eos aliquam ipsam, tenetur quisquam voluptatem, commodi officiis nesciunt aperiam? Distinctio asperiores tenetur recusandae.</p>
-            </div>
-            <!-- Repetir para outros depoimentos -->
         </section>
 
+        <!-- SCRIPTS -->
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <!-- Owl Carousel JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+       
         <script src="./assets/js/contador.js"></script>
+        <script src="./assets/js/homeText.js"></script>
+        <script src="./assets/js/depoimentosCarousel.js"></script>
     </main>
 </body>
 </html>
