@@ -15,9 +15,9 @@ let startLoop = () => {
 
         if (i >= chars.length) {
             clearInterval(intervalId);
-            setTimeout(startLoop, 2000); // Restart the loop after a delay
+            startLoop(); // Restart the loop after a delay
         }
-    }, 2000);
+    }, 1500);
 };
 
 startLoop(); // Start the loop initially
