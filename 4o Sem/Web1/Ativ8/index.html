@@ -154,19 +154,98 @@
             </div>
         </section>
 
-        <!-- SCRIPTS -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__main">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <h3 class="footer__title">Sobre Nós</h3>
+                        <p class="footer__text">Somos uma fonte confiável de notícias para a comunidade acadêmica. Mantenha-se informado conosco!</p>
+                    </div>
+    
+                    <div class="footer__section">
+                        <h3 class="footer__title">Categorias</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Esportes</a></li>
+                            <li><a href="#" class="footer__link">Eventos</a></li>
+                            <li><a href="#" class="footer__link">Institucional</a></li>
+                            <!-- Add more categories as needed -->
+                        </ul>
+                    </div>
+    
+                    <div class="footer__section">
+                        <h3 class="footer__title">Redes Sociais</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Facebook</a></li>
+                            <li><a href="#" class="footer__link">Twitter</a></li>
+                            <li><a href="#" class="footer__link">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="footer__bottom">
+                    <p class="footer__copyright">&copy; 2023 IFNews. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-        <!-- Owl Carousel JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-       
-        <script src="./assets/js/contador.js"></script>
-        <script src="./assets/js/homeText.js"></script>
-        <script src="./assets/js/depoimentosCarousel.js"></script>
+
     </main>
+    <!-- Smooth Scrolling Script -->
+    <!-- <script>
+        // Smooth scrolling function
+        function scrollToSection(targetSectionId) {
+            const targetSection = document.getElementById(targetSectionId);
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Event listener for scrolling
+        document.addEventListener('wheel', function (event) {
+            event.preventDefault(); // Prevents the default scroll behavior
+
+            const delta = event.deltaY; // Check the direction of scroll
+
+            // Find the current visible section
+            const currentSection = [...document.querySelectorAll('section')].find(section => {
+                const rect = section.getBoundingClientRect();
+                return rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
+            });
+
+            // Determine the next or previous section based on scroll direction
+            const sections = document.querySelectorAll('section');
+            let index = [...sections].indexOf(currentSection);
+            index = index === -1 ? 0 : index; // Handle the case when the currentSection is not found
+
+            const targetIndex = delta > 0
+                ? Math.min(index + 1, sections.length - 1)
+                : Math.max(index - 1, 0);
+
+            const targetSection = sections[targetIndex];
+
+            // Scroll to the target section if it exists
+            if (targetSection) {
+                scrollToSection(targetSection.id); // Pass the section id to scrollToSection
+            }
+        }, { passive: false });
+
+    </script> -->
+
 </body>
+<!-- SCRIPTS -->
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<!-- Owl Carousel JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script src="./assets/js/contador.js"></script>
+<script src="./assets/js/homeText.js"></script>
+<script src="./assets/js/depoimentosCarousel.js"></script>
 </html>
