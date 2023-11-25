@@ -13,18 +13,22 @@ html {
 body {
     font-family: 'Segoe UI', sans-serif;
     text-shadow: 5px 6px 0px rgba(0,0,0,0.2);
+    width: 100%;
 }
 
 main {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
-    padding: 0 20px 20px 20px;
+    padding: 0px 20px;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
 }
 
 section {
     display: grid;
     justify-content: center;
-    min-width: 100%;
+    max-width: 1200px;
     min-height: 90vh;
 }
 
@@ -174,6 +178,7 @@ section {
     align-items: flex-end;
     border-radius: 16px;
     box-shadow: 5px 6px 0px rgba(0,0,0,0.2);
+    min-height: 20rem;
 }
 
 .noticias__cont {
@@ -233,6 +238,7 @@ section {
     border: 1px solid #ccc;
     font-size: 50px;
     border-radius: 32px;
+    min-width: 1200px;
 }
 .logos__logo {
     width: 200px;
@@ -248,10 +254,9 @@ section {
     align-items: center;
     color: #000;
 }
-.logos > div > img:first-child {
+.logos__imgs > a:nth-child(1) {
     margin-top: 45px;
 }
-
 
 /* Depoimentos */
 .depoimentos {
@@ -275,4 +280,66 @@ section {
 #myCarousel {
     max-width: 100%;
     overflow: hidden; 
+    display: flex;
+    align-items: center;
+}
+
+
+/* Footer Styles */
+.footer {
+    width: 100vw;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 5px 6px 0px rgba(0,0,0,0.2);
+    text-shadow: 2px 3px 0px rgba(0,0,0,0.1);
+    min-height: 30vh;
+}
+.footer__main {
+    max-width: 1200px;
+    display: grid;
+    align-items: center;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.footer__text {
+    font-size: 30px;
+    text-align: center;
+}
+.footer__list {
+    list-style: none;
+    padding: 0;
+    font-size: 30px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.footer__bottom {
+    margin-top: 20px;
+    text-align: center;
 }
