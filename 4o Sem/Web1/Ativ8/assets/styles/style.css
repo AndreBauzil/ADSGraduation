@@ -188,12 +188,28 @@ main > a {
     border: 1px solid #ccc;
     margin-bottom: 20px;
     position: relative;
-    overflow: hidden; 
     display: flex;
-    align-items: flex-end;
+    overflow: auto; 
     border-radius: 16px;
     box-shadow: 5px 6px 0px rgba(0,0,0,0.2);
     min-height: 20rem;
+    align-items: flex-start;
+}
+
+.noticias__main {
+    overflow: auto;
+    border-radius: 16px;
+    height: 100%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Track */
+.noticias__item::-webkit-scrollbar-track {
+    border-radius: 10rem;
+    margin: 50px;
 }
 
 .noticias__cont {
@@ -202,6 +218,9 @@ main > a {
     border-radius: 2rem 2rem 0rem 0rem;
     transition: all 0.2s;
     opacity: 0.7;
+    height: 100%;
+    position: relative;
+    top: 50%;
 }
 .noticias__item:hover .noticias__cont {
     opacity: 1;
@@ -216,6 +235,11 @@ main > a {
 .noticias__summary {
     color: #c9c9c9;
     text-shadow: 3px 0px rgba(0,0,0,0.2);
+    /* text-overflow:ellipsis;
+    white-space:nowrap; 
+    height: 50%; */
+    
+    /* overflow: auto;  */
 }
 
 
@@ -375,7 +399,7 @@ main > a {
 /* News Page */
 .news {
     grid-gap: 20px;
-    padding: 5rem 0;
+    padding: 2.5rem 0 5rem 0;
     min-height: 70vh;
 }
 
@@ -393,15 +417,14 @@ main > a {
     position: relative;
     width: 100vw;
     height: 30vh;
-    background: no-repeat url(../imgs/destaque.jpg) center;
-    background-size: cover;
-    border: 1px solid #fff;
-    border-radius: 0 0 16px 16px;
+    margin: -15px 0;
 }
 
 .news__main-photo {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 30vh;
+    border: 2px solid #fff;
+    border-radius: 0 0 16px 16px;
 }
 
 .news__thumbnail-container {
@@ -413,6 +436,7 @@ main > a {
 }
 
 .news__thumbnail {
+    border: 1px solid #fff;
     width: 50px;
     height: auto;
     margin-right: 10px;
