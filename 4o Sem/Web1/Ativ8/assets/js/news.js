@@ -1,34 +1,31 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the container element for the news photos
-    var newsPhotosContainer = document.querySelector('.news__photos');
+document.addEventListener('DOMContentLoaded', () => {
+    // Pega as fotos principais and thumbnail container elements
+    var mainPhoto = document.querySelector('.news__main-photo');
 
-    // Get the main photo and thumbnail container elements
-    var mainPhoto = document.querySelector('.news__photos');
-    var thumbnailContainer = document.querySelector('.news__thumbnail-container');
-
-    // Get the thumbnail images
+    // Pega as imagens das thumbnail 
     var thumbnailImages = document.querySelectorAll('.news__thumbnail');
 
-    // Add click event listeners to each thumbnail
-    thumbnailImages.forEach(function(thumbnail, index) {
-        thumbnail.addEventListener('click', function() {
-            // Change the background image of the main photo to the clicked thumbnail
+    // Adiciona um click event listeners para cada thumbnail
+    thumbnailImages.forEach(thumbnail => {
+        thumbnail.addEventListener('click', () => {
+            // Troca a imagem de fundo da foto principal para a thumbnail clicada 
             mainPhoto.style.background = 'no-repeat center url(' + thumbnail.src + ')';
-            mainPhoto.style.backgroundSize = cover
+            mainPhoto.style.backgroundSize = 'cover'
 
-            // Remove the 'active' class from all thumbnails
-            thumbnailImages.forEach(function(thumb) {
+            // Remove a classe 'active' de todas as thumbnails
+            thumbnailImages.forEach(thumb => {
                 thumb.classList.remove('active');
             });
 
-            // Add the 'active' class to the clicked thumbnail
+            // adiciona a classe 'active' na thumbnail clicada
             thumbnail.classList.add('active');
         });
     });
 
-    // Set the initial background image for the main photo
-    mainPhoto.style.background = 'no-repeat center url(' + thumbnailImages[0].src + ')';
+    // Seta a imagem de fundo padrão para a foto principal
+    mainPhoto.style.background = 'no-repeat center url(' + thumbnailImages[1].src + ')';
+    mainPhoto.style.backgroundSize = 'cover'
 
-    // Add the 'active' class to the first thumbnail
-    thumbnailImages[0].classList.add('active');
+    // Add a classe 'active' na thumbnail principal 
+    thumbnailImages[1].classList.add('active');
 });
