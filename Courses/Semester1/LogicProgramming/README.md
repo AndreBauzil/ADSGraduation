@@ -39,11 +39,3 @@ This repository contains materials related to the "Programming Logic" course. Th
 
 ### Unit VII: Algorithm Implementation
 - 7.1 Programming language
-
-## Special Instructions or Notes
-
-- Please follow the provided structure for assignments, projects, and exams.
-- Refer to the specific README files within each section for detailed instructions and guidelines.
-- If you have any questions or need clarification on course content, feel free to reach out via the repository's issue tracker.
-
-Happy learning!
