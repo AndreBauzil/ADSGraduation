@@ -1,4 +1,4 @@
-package kotlin.com.bauzil.atividade4.model
+package com.bauzil.atividade4.model
 
 data class Address(
     var zipCode: String = "",
