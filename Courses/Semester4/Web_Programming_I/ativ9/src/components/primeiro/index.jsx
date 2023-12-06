@@ -4,7 +4,7 @@ import { Paragrafo } from './style';  // Estilização do parágrafo
 
 export const Primeiro = () => {
   // estados
-  const [random, setRandom] = useState('0');
+  const [random, setRandom] = useState([0,0,0]);
   const [nome, setNome] = useState('Digite o seu nome...');
   
   // variáveis
@@ -12,7 +12,10 @@ export const Primeiro = () => {
   let i=0;
 
   // funções
-  const setarNome = () => setNome(document.getElementById("input").value)
+  const setarNome = () => {
+    let inputValue = document.getElementById("input").value
+    setNome(inputValue !== "" ? inputValue : "Digite o seu nome...")  // valida se nao estiver vazio
+  }
   const alterarRandom = () => { 
     do {    // adiciona ao array três números aleatórios entre 0 e 256 
       randomNums.push(Math.floor(Math.random()*256))
@@ -33,7 +36,10 @@ export const Primeiro = () => {
     return (
       <>
         <Paragrafo randoms={ random }>{ nome }</Paragrafo>
-        <button onClick={ alterarRandom }>Alterar Cor</button>
+        <div>
+          <button onClick={ alterarRandom }>Alterar Cor</button>
+          <button onClick={() => setNome("Digite o seu nome...")}>↻</button>
+        </div>
       </>
     )
   }
