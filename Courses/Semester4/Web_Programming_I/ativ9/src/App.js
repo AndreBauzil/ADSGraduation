@@ -1,4 +1,5 @@
 import { Primeiro } from "./components/primeiro"
+import { Segundo } from "./components/segundo"
 import "./style.css"
 
 // import {
@@ -14,6 +15,7 @@ export default function App() {
   return (
     <div className="Primeiro App">
      <Primeiro/>
+     <Segundo />
     </div>
   )
 }
