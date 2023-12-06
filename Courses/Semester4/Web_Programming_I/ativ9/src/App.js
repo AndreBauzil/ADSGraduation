@@ -13,9 +13,13 @@ import "./style.css"
 
 export default function App() {
   return (
+    <>
     <div className="Primeiro App">
-     <Primeiro/>
-     <Segundo />
+      <Primeiro/>
     </div>
+    <div className="Segundo App">
+      <Segundo />
+    </div>
+    </>
   )
 }
