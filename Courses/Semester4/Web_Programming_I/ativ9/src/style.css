@@ -7,13 +7,13 @@
 
 html {
   position: relative;
-  width: 100vw;
+  width: 95%;
   height: fit-content;
 }
 
 body {
   background-color: darkgreen;
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: grid;
   place-items: center;
@@ -22,8 +22,6 @@ body {
 .App {
   background-color: green;
   width: 100%;
-  /* height: fit-content; */
-  /* position: relative; */
   margin: 2rem 0;
   padding: 2rem;
   display: flex;
