@@ -23,15 +23,15 @@ This section contains folders organized by semesters, each containing informatio
   - [Database I](Courses/Semester2/Database_I): Overview and resources for Course 6.
 - [Semester 3](Courses/Semester3)
   - [Object Oriented Programming](Courses/Semester2/Object_Oriented_Programming): Overview and resources for Course 7.
-  - [Data Structures](Courses/Semester2/Data_Structures): Overview and resources for Course 8.
-  - [Computer Networks](Courses/Semester2/Computer_Networks): Overview and resources for Course 9.
-  - [System Analysis I](Courses/Semester2/System_Analysis_I): Overview and resources for Course 10.
+  - [Data Structures](Courses/Semester3/Data_Structures): Overview and resources for Course 8.
+  - [Computer Networks](Courses/Semester3/Computer_Networks): Overview and resources for Course 9.
+  - [System Analysis I](Courses/Semester3/System_Analysis_I): Overview and resources for Course 10.
 - [Semester 4](Courses/Semester4)
-  - [Web Programming 1](Courses/Semester2/Web_Programming_1): Overview and resources for Course 11.
-  - [Mobile Programming 1](Courses/Semester2/Mobile_Programming_1): Overview and resources for Course 12.
-  - [Database III](Courses/Semester2/Database_III): Overview and resources for Course 13.
-  - [Application Testing](Courses/Semester2/Application_Testing): Overview and resources for Course 14.
-  - [Distributed Systems](Courses/Semester2/Distributed_Systems): Overview and resources for Course 15.
+  - [Web Programming 1](Courses/Semester4/Web_Programming_1): Overview and resources for Course 11.
+  - [Mobile Programming 1](Courses/Semester4/Mobile_Programming_1): Overview and resources for Course 12.
+  - [Database III](Courses/Semester4/Database_III): Overview and resources for Course 13.
+  - [Application Testing](Courses/Semester4/Application_Testing): Overview and resources for Course 14.
+  - [Distributed Systems](Courses/Semester4/Distributed_Systems): Overview and resources for Course 15.
 
 
 Keep in mind that not all courses are here and they also may not be complete, it's just to storage all the assignments, notes, classes, etc, from all the graduation.
