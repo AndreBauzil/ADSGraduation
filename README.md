@@ -23,15 +23,15 @@ This section contains folders organized by semesters, each containing informatio
   - [Database I](Courses/Semester2/Database_I): Overview and resources for Course 6.
 - [Semester 3](Courses/Semester3)
   - [Object Oriented Programming](Courses/Semester2/Object_Oriented_Programming): Overview and resources for Course 7.
-  - [Data Structures](Courses/Semester2/Data_Structures): Overview and resources for Course 8.
-  - [Computer Networks](Courses/Semester2/Computer_Networks): Overview and resources for Course 9.
-  - [System Analysis I](Courses/Semester2/System_Analysis_I): Overview and resources for Course 10.
+  - [Data Structures](Courses/Semester3/Data_Structures): Overview and resources for Course 8.
+  - [Computer Networks](Courses/Semester3/Computer_Networks): Overview and resources for Course 9.
+  - [System Analysis I](Courses/Semester3/System_Analysis_I): Overview and resources for Course 10.
 - [Semester 4](Courses/Semester4)
-  - [Web Programming 1](Courses/Semester2/Web_Programming_1): Overview and resources for Course 11.
-  - [Mobile Programming 1](Courses/Semester2/Mobile_Programming_1): Overview and resources for Course 12.
-  - [Database III](Courses/Semester2/Database_III): Overview and resources for Course 13.
-  - [Application Testing](Courses/Semester2/Application_Testing): Overview and resources for Course 14.
-  - [Distributed Systems](Courses/Semester2/Distributed_Systems): Overview and resources for Course 15.
+  - [Web Programming 1](Courses/Semester4/Web_Programming_1): Overview and resources for Course 11.
+  - [Mobile Programming 1](Courses/Semester4/Mobile_Programming_1): Overview and resources for Course 12.
+  - [Database III](Courses/Semester4/Database_III): Overview and resources for Course 13.
+  - [Application Testing](Courses/Semester4/Application_Testing): Overview and resources for Course 14.
+  - [Distributed Systems](Courses/Semester4/Distributed_Systems): Overview and resources for Course 15.
 
 
 Keep in mind that not all courses are here and they also may not be complete, it's just to storage all the assignments, notes, classes, etc, from all the graduation.
@@ -39,24 +39,20 @@ Keep in mind that not all courses are here and they also may not be complete, it
 ## Projects
 This section it's under construction... <!-- contains folders for each project undertaken during the BTech program. Each project folder includes a README providing an overview, objectives, and outcomes. -->
 <!--
-- [Project 1](Projects/Project1): Overview of Project 1.
-- [Project 2](Projects/Project2): Overview of Project 2. -->
+- [Project 1](Projects/Project1): Overview of Project 1. -->
 
 ## Internships
 This section it's under construction...
 <!-- Explore folders in this section to find details about internships, including overviews, tasks, and achievements.
 
 - [Internship 1](Internships/Internship1): Overview of Internship 1.
-- [Internship 2](Internships/Internship2): Overview of Internship 2.
 -->
 
 ## Certifications
 This section it's under construction...
 <!-- This section includes folders for each certification earned during the BTech program, with details about skills acquired and their relevance.
 
-- [Certification 1](Certifications/Certification1): Details about Certification 1.
-- [Certification 2](Certifications/Certification2): Details about Certification 2.
-  -->
+- [Certification 1](Certifications/Certification1): Details about Certification 1. -->
 ## Research
 This section it's under construction...
 <!-- Explore folders in this section for details about research projects, including overviews, objectives, and findings.
