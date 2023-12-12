@@ -39,24 +39,20 @@ Keep in mind that not all courses are here and they also may not be complete, it
 ## Projects
 This section it's under construction... <!-- contains folders for each project undertaken during the BTech program. Each project folder includes a README providing an overview, objectives, and outcomes. -->
 <!--
-- [Project 1](Projects/Project1): Overview of Project 1.
-- [Project 2](Projects/Project2): Overview of Project 2. -->
+- [Project 1](Projects/Project1): Overview of Project 1. -->
 
 ## Internships
 This section it's under construction...
 <!-- Explore folders in this section to find details about internships, including overviews, tasks, and achievements.
 
 - [Internship 1](Internships/Internship1): Overview of Internship 1.
-- [Internship 2](Internships/Internship2): Overview of Internship 2.
 -->
 
 ## Certifications
 This section it's under construction...
 <!-- This section includes folders for each certification earned during the BTech program, with details about skills acquired and their relevance.
 
-- [Certification 1](Certifications/Certification1): Details about Certification 1.
-- [Certification 2](Certifications/Certification2): Details about Certification 2.
-  -->
+- [Certification 1](Certifications/Certification1): Details about Certification 1. -->
 ## Research
 This section it's under construction...
 <!-- Explore folders in this section for details about research projects, including overviews, objectives, and findings.
