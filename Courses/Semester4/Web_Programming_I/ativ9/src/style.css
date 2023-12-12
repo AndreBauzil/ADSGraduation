@@ -4,13 +4,17 @@
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
 }
-
 html {
   position: relative;
   width: 100%;
   height: fit-content;
+  scroll-behavior: smooth;
+  user-select: none;
 }
-
+html::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
 body {
   background-color: darkgreen;
   width: 90%;
@@ -18,7 +22,6 @@ body {
   display: grid;
   place-items: center;
 }
-
 .App {
   background-color: green;
   width: 100%;
@@ -27,37 +30,51 @@ body {
   display: flex;
   border-radius: 3rem;
   border: 1px solid #fff;
+  justify-content: center;
 }
+
 
 .Primeiro {
   justify-content: center;
   gap: 1rem;
   align-items: center;
-}
-
-.Segundo {
   flex-direction: column;
 }
-
-button {
-  border-radius: 10px;
-  padding: 5px 15px;
-  font-weight: bold;
-}
-
 input {
   border-radius: 10px;
   text-align: center;
   padding: .5rem;
 }
 
-.posts {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
-  grid-gap: 1rem;
+
+.Segundo {
+  flex-direction: column;
+}
+button {
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 5px 6px 0px rgba(0,0,0,0.2);
+}
+.Segundo > button {
+  margin-bottom: 2rem;
+}
+.posts::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
 }
 
-.post {
-  margin: 1rem;
+
+.Terceiro {
+  align-items: center;
+  font-size: 3rem;
+  text-shadow: 3px 3px 6px #000;
+  flex-direction: column;
+}
+
+.Quarto > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

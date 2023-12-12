@@ -1,13 +1,5 @@
 import { useState } from "react";
-
-
-export const Post = ({ data, desc, nome }) => (
-  <div className="post">
-      <p>Data: {data}</p>
-      <p>Desrição: {desc}</p>
-      <p>Nome: {nome}</p>
-  </div>
-);
+import { Post, Content, Posts } from "./style";
 
 export const Segundo = () => {
   const [components, setComponents] = useState([])
@@ -26,38 +18,28 @@ export const Segundo = () => {
         numRandom(30)   // dia
       ).toLocaleDateString("en-GB"),
       desc: lorem,
-      nome: nomes[numRandom(nomes.length)] + " " + sobrenomes[numRandom(sobrenomes.length)]
+      nome: nomes[numRandom(nomes.length)] + " " + sobrenomes[numRandom(sobrenomes.length)],
+      src: `/assets/imgs/${numRandom(10)}.jpg`
     }
-    setComponents([...components, novoPost])
+    setComponents([...components, novoPost])       // Seta um novo post junto com os já existentes para persistência dos dados
   }
-  // const criarPost = () => setComponents([...components, "Teste"])   // Seta um novo post junto com os já existentes para persistência dos dados
   const numRandom = max => Math.floor(Math.random()*max)  // Geração de número random, usado diversas vezes
 
-
+   
   return (
     <>
-     <button onClick={ criarPost }>Criar Posts</button> 
-     <div className="posts">
+     <button onClick={ criarPost }>Criar Post</button> 
+     <Posts className="posts">
       { components.map((post, i) => (
-        <Post 
-          key={i} 
-          {...post} 
-          src={`../../assets/imgs/${numRandom(10)}.png`}
-          // data={
-          //   new Date(
-          //     2023, 
-          //     numRandom(12),  // mês
-          //     numRandom(30)   // dia
-          //   ).toLocaleDateString("en-GB")
-          // } 
-          // desc={ lorem } 
-          // nome={
-          //   nomes[numRandom(nomes.length)] + " " + 
-          //   sobrenomes[numRandom(sobrenomes.length)]
-          // } 
-        /> 
+        <Post key={i} src={ post.src } >
+          <Content>
+            <p>Data: { post.data }</p>
+            <p>Nome: { post.nome }</p>
+            <p>Desrição: { post.desc }</p>
+          </Content>
+        </Post>
       ))}
-     </div>
+    </Posts>
     </>
   )
 }

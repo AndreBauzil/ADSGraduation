@@ -1,15 +1,8 @@
 import { Primeiro } from "./components/primeiro"
 import { Segundo } from "./components/segundo"
+import { Terceiro } from "./components/terceiro"
+import { Quarto } from "./components/quarto"
 import "./style.css"
-
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route
-// } from "react-router-dom";
-
-// import { Home } from "./pages/primeiro";
-// import { Login } from "./pages/segundo";
 
 export default function App() {
   return (
@@ -20,6 +13,13 @@ export default function App() {
     <div className="Segundo App">
       <Segundo />
     </div>
+    <div className="Terceiro App">
+      <Terceiro />
+    </div>
+    <div className="Quarto App">
+      <Quarto />
+    </div>
+    
     </>
   )
 }
