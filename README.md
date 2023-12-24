@@ -27,7 +27,7 @@ This section contains folders organized by semesters, each containing informatio
   - [Computer Networks](Courses/Semester3/Computer_Networks): Overview and resources for Course 9.
   - [System Analysis I](Courses/Semester3/System_Analysis_I): Overview and resources for Course 10.
 - [Semester 4](Courses/Semester4)
-  - [Web Programming 1](Courses/Semester4/Web_Programming_1): Overview and resources for Course 11.
+  - [Web Programming](Courses/Semester/Web_Programming_I): Overview and resources for Course 11.
   - [Mobile Programming 1](Courses/Semester4/Mobile_Programming_1): Overview and resources for Course 12.
   - [Database III](Courses/Semester4/Database_III): Overview and resources for Course 13.
   - [Application Testing](Courses/Semester4/Application_Testing): Overview and resources for Course 14.
