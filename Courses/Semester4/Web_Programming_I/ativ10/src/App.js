@@ -1,5 +1,5 @@
-import Primeiro from './components/primeiro/'
-import Segundo from './components/segundo/'
+import Primeiro from './components/primeiro'
+import Segundo from './components/segundo'
 
 import "./style.css"
 

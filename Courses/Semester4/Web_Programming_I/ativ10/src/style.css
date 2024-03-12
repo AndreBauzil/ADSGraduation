@@ -7,9 +7,13 @@
 html {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 90vw;
   scroll-behavior: smooth;
   user-select: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
 }
 body {
   background-color: darkgreen;
@@ -67,6 +71,28 @@ label {
   align-items: center;
 }
 .votos {
-  gap: 2rem;
   align-items: flex-end;
+  flex-direction: column;
+}
+.Primeiro div button {
+  margin-left: 1.5rem;
+}
+
+
+/* Segundo */
+.Segundo {
+  align-items: center;
+  flex-direction: column;
+}
+.inputs, .buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.buttons {
+  gap: 1rem;
+}
+.posts::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
 }
