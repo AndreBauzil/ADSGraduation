@@ -1,4 +1,4 @@
-package com.bauzil.crud.courses.courses_api;
+package com.bauzil.courses_api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
