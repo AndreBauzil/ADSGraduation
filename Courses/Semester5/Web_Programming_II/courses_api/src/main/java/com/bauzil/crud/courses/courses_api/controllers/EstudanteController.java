@@ -11,6 +11,3 @@ import lombok.AllArgsConstructor;
 public class EstudanteController {
     
 }
-
-// https://www.dio.me/articles/aplicacoes-backend-em-java-desenvolvendo-crud-de-forma-simples
-// https://wiki-coatic.saude.gov.br/backend-java
