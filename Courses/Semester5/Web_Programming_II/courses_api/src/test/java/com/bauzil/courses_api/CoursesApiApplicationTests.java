@@ -1,4 +1,4 @@
-package com.bauzil.crud.courses.courses_api;
+package com.bauzil.courses_api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
