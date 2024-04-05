@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GonzaloR</string>
+    <string-array name="currency_names">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>BRL</item> <!-- Agregando Real brasileño -->
+        <!-- Agrega otras monedas que desees incluir -->
+    </string-array>
+
+</resources>

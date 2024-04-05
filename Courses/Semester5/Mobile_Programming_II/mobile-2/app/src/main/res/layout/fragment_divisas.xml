@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextDivisas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce las divisas"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDivisas"
+        android:layout_centerHorizontal="true"
+        android:text="Consultar"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConsultar"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>
